@@ -1,0 +1,246 @@
+
+        /* تنظیمات کلی صفحه */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            width: 100vw;
+        }
+        
+        /* استایل بخش بالای صفحه (هدر) */
+        .header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            width: 100%;
+            padding: 40px; /* افزایش مقدار padding برای پهن‌تر شدن هدر */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        .profile-image {
+            width: 90px;
+            height: 75px;
+            border-radius: 50%;
+            background-color: #fffbfb;
+            position: absolute;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        /* استایل کانتینر اصلی */
+        .container {
+            display: flex;
+            flex: 1;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* استایل بخش سمت چپ */
+        .left-section {
+            width: 28%;
+            background-color: #e2dbcd;
+            padding: 20px;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .left-section h3 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* استایل لیست اطلاعات تماس */
+        .contact-info {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .contact-info li {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        /* استایل دایره آیکون‌ها */
+        .contact-info li i {
+            margin-right: 10px;
+            color: #fff;
+            background-color: #000;
+            border-radius: 50%;
+            padding: 4px;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8em;
+        }
+
+        /* استایل بخش آموزش */
+        .education {
+            margin-top: 20px;
+            position: relative;
+            padding-left: 10px; /* فاصله برای خط عمودی */
+            margin-left: -15px;
+            
+           
+        }
+
+        .education h4 {
+            color: #333;
+            font-size: 1em;
+            font-weight: bold;
+            padding-bottom: 5px;
+            padding-right: 2px;
+        }
+
+        .degree {
+            display: flex;
+            align-items: center;
+            margin-top: 5px;
+            color: #333;
+        }
+
+        /* استایل خط عمودی */
+        .education .vertical-line {
+            position: absolute;
+            left: 25;
+            top: 70px; /* تنظیم شروع خط از پایین دایره Bachelor */
+            width: 2px;
+            height: 50%; /* تنظیم ارتفاع خط */
+            background-color: #333;
+        }
+
+        .degree:before {
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            background-color: #000;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        /* استایل بخش مهارت‌ها */
+        .skills {
+            margin-top: 20px;
+            line-height: 1.7;
+        }
+
+        .skills h4 {
+            color: #333;
+            font-size: 1em;
+            font-weight: bold;
+            padding-bottom: 5px;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills ul li {
+            color: #333;
+            margin-bottom: 5px;
+            padding-left: 10px;
+        }
+
+        /* استایل بخش سمت راست */
+        .right-section {
+            width: 75%;
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+            margin-right: 80px;
+        }
+        /* استایل خطوط زیر عناوین */
+        .section h3 {
+            position: relative;
+            padding-bottom: 10px;
+        }
+
+        .section h3:after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 2px;
+            background-color: #333;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+
+        /* استایل تاریخ */
+        .date {
+            color: #888; /* رنگ طوسی برای تاریخ */
+            font-size: 0.8em; /* اندازه فونت برای تاریخ */
+            margin-bottom: 0.5cm;
+            margin-top: -0.5cm;
+        }
+
+        /* استایل دایره‌های شرح وظایف */
+        .task {
+            display: contents;
+            align-items: first baseline;
+            margin:0 1cm; /* فاصله عمودی بین وظایف */
+            margin-top: 0.5cm;    
+        }
+
+        .task:before {
+            content: '';
+            display: inline-block;
+            width: 8px; /* اندازه دایره */
+            height: 8px; /* اندازه دایره */
+            background-color: #000; /* رنگ دایره */
+            border-radius: 50%; /* گرد کردن دایره */
+            margin-right: 10px; /* فاصله دایره‌ها به سمت راست */
+            margin-left: 1cm;
+        }
+        .containerEducation{
+    display: flex;
+    margin-left: -12px;
+    /* text-align: left; */
+ 
+}
+.DivLine{
+  width: 2px;
+  margin-top: -6px;  
+}
+
+.DivUni{
+  border-left: 2px;
+  padding-left: 35px;
+  text-align: left;
+  /* background-color: yellow; */
+}
+#UlEducation{
+    list-style-type: disc;
+    line-height: 1.7;
+  }
+  #UlEducation li{
+    font-size: 16px;
+
+  }
+  #UniDescription{
+    color: rgb(80, 78, 78);
+    font-size: 16px;
+    
+  }
